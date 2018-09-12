@@ -31,7 +31,7 @@ public class Oblig1Test {
         antallFeil += oppgave7();
         antallFeil += oppgave8();
         antallFeil += oppgave9();
-        //antallFeil += oppgave10();
+        antallFeil += oppgave10();
 
         if (antallFeil == 0) {
             System.out.println("Gratulerer!! Du passerte testen!");
@@ -760,7 +760,7 @@ public class Oblig1Test {
 
         while (flere1) {
             int[] c = Oblig1.tredjeMin(tabell);
-
+            System.out.println(Arrays.toString(c));
             if (tabell[c[0]] != 1 || tabell[c[1]] != 2 || tabell[c[2]] != 3) {
                 System.out.println("Oppgave 9: c) Feil for " + Arrays.toString(tabell));
                 antallFeil++;
@@ -812,7 +812,7 @@ public class Oblig1Test {
         long tid = System.currentTimeMillis();
         Oblig1.tredjeMin(a);
         tid = System.currentTimeMillis() - tid;
-
+        System.out.println(tid);
 
         if (tid > 100) {
             System.out.println("Oppgave 9: g) Metoden er ineffektiv! Bruker du");
@@ -821,7 +821,7 @@ public class Oblig1Test {
         }
 
         return antallFeil;
-    }/*
+    }
 
     ///// Oppgave 10 //////////////////////////////////////
 
@@ -956,7 +956,7 @@ public class Oblig1Test {
         }
         return antallFeil;
     }
-*/
+
     ///// Hjelpemetoder /////////////////////////////
 
     public static void bytt(int[] a, int i, int j) {

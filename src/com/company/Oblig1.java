@@ -7,9 +7,14 @@ public class Oblig1 {
 
     //
     public static void main(String[] args) {
-        /*
-        int[] a = {1,-1};
+
+
+
+        int[] a = {2,1,3,0,5,6};
+        System.out.println(Arrays.toString(tredjeMin(a)));
+       /*
        delsortering(a);
+
         System.out.println(Arrays.toString(a));
         //int sum=0 ;*/
         //System.out.println(Arrays.toString(indekssortering(a)));
@@ -242,13 +247,96 @@ public class Oblig1 {
     //være iindeksen til den minste veriden i a, andre verdi indeksen til den nest minste i a og tredje verdi
     // indeksen til den tredje minste verdien i a.
     public static int[] tredjeMin(int[] a) {
-        int arrayAlengde = a.length;
         if (a.length < 3)
             throw new NoSuchElementException("Tabbellen har mindre enn 3 verdier");
-       /* int mv = 0;
-        int nmv = 1;
-        int nnmv = 2;
 
+
+        int[] b = Arrays.copyOf(a,3);
+        b=indekssortering(b);
+
+        int mv = b[0];
+        int nmv = b[1];
+        int nnmv = b[2];
+
+        int mVerdi= a[mv];
+        int nmVerdi= a[nmv];
+        int nnmVerdi = a[nnmv];
+        if(a.length==3)
+            return new int[]{mv,nmv,nnmv};
+        for (int i = 3 ; i < a.length ; i++){
+            if (a[i]<nnmVerdi) {
+                if (a[i]<nmVerdi) {
+                    if (a[i]<mVerdi) {
+                        nnmv=nmv;
+                        nnmVerdi=nmVerdi;
+
+                        nmv=mv;
+                        nmVerdi=mVerdi;
+
+                        mv=i;
+                        mVerdi=a[mv];
+                    }
+                    else
+                    {
+                        nnmv=nmv;
+                        nnmVerdi=nmVerdi;
+
+                        nmv=i;
+                        nmVerdi=a[nmv];
+                    }
+                }
+                else
+                {
+                    nnmv=i;
+                    nnmVerdi=a[nnmv];
+
+                }
+            }
+        }
+
+        return new int[]{mv,nmv,nnmv};
+
+    }
+
+    //Oppgave 10
+
+    public static boolean inneholdt(String a, String b){
+
+        int[] aL = new int[29];
+        int[] bL = new int[29];
+        lagBokstav(a,aL);
+        lagBokstav(b,bL);
+        boolean ordOk = true;
+
+        if(a.equals(b) || a.length() == 0){
+            return ordOk;
+        } else {
+            for(int i = 0; i <aL.length; i++){
+                if(aL[i] > bL[i]){
+                    ordOk = false;
+                }
+            }
+            return ordOk;
+        }
+
+    }
+
+    public static void lagBokstav(String ord, int[] listen){
+        char[] bokstaver = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','Æ','Ø','Å'};
+
+        for(int i = 0; i<ord.length(); i++){
+            for(int j = 0; j<bokstaver.length;j++){
+                char temp = (char) ord.charAt(i);
+                if(bokstaver[j] == temp){
+                    listen[j]++;
+                }
+            }
+        }
+    }
+
+
+    // Hjelpemetoder////
+/*
         if (a[mv] > a[nmv]){
             mv = 1;
             nmv = 0;
@@ -263,40 +351,6 @@ public class Oblig1 {
             nmv = 2;
             nnmv = 1;
         }*/
-        int[] m = new int[3];
-
-        System.arraycopy(a, 0, m, 0, 3);
-        kvikksortering(m,0,m.length);
-
-        if(arrayAlengde == 3)
-            return m;
-        int laveste = m[3-1];
-        for(int i = 3; i < arrayAlengde; i++){
-            int verdi = a[i];
-
-            if(a[i]< laveste){
-                for(int j = 0; j < 3; j++){
-                    if(verdi < m[j]){
-                        int temp = m[j];
-                        m[j] = verdi;
-                        verdi = temp;
-                    }
-                    laveste = m[3-1];
-                }
-            }
-        }
-        return m;
-
-
-
-    }
-
-    //Oppgave 10
-
-
-
-    // Hjelpemetoder////
-
     //returnerer true dersom verdien j finnes i a
     public static boolean valueNotInArray(int[] a, int j){
         for (int i : a ) {
