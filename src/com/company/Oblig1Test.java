@@ -29,8 +29,8 @@ public class Oblig1Test {
         antallFeil += oppgave5();
         antallFeil += oppgave6();
         antallFeil += oppgave7();
-        //antallFeil += oppgave8();
-        //antallFeil += oppgave9();
+        antallFeil += oppgave8();
+        antallFeil += oppgave9();
         //antallFeil += oppgave10();
 
         if (antallFeil == 0) {
@@ -579,13 +579,12 @@ public class Oblig1Test {
                     ("Oppgave 7a: i) Svaret skal bli lik ABCDEFGHIJKLMN");
             antallFeil++;
         }
-/*
+
         String[] a = {};
 
         try {
             s = Oblig1.flett(a);  // kaller metoden
         } catch (Exception e) {
-            System.out.println(e);
             System.out.println
                     ("Oppgave 7b: a) Skal ikke kaste unntak for en tom tabell!");
             antallFeil++;
@@ -600,7 +599,6 @@ public class Oblig1Test {
         try {
             s = Oblig1.flett("", "ABC", "");  // kaller metoden
         } catch (Exception e) {
-            System.out.println(e);
             System.out.println
                     ("Oppgave 7b: c) Skal ikke kaste unntak for en tom streng!");
             antallFeil++;
@@ -621,15 +619,15 @@ public class Oblig1Test {
         }
 
         s = Oblig1.flett("AFK", "BGLP", "CHMQT", "DINRUW", "EJOSVXY");
-        System.out.println(s);
+
         if (s.compareTo("ABCDEFGHIJKLMNOPQRSTUVWXY") != 0) {
             System.out.println
                     ("Oppgave 7b: f) Svaret skal bli ABCDEFGHIJKLMNOPQRSTUVWXY!");
             antallFeil++;
         }
-*/
+
         return antallFeil;
-    }/*
+    }
 
     ///// Oppgave 8 //////////////////////////////////////
 
@@ -823,7 +821,7 @@ public class Oblig1Test {
         }
 
         return antallFeil;
-    }
+    }/*
 
     ///// Oppgave 10 //////////////////////////////////////
 

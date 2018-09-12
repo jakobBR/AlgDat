@@ -1,51 +1,31 @@
 package com.company;
 
 import java.util.Arrays;
-
-import static com.company.Oblig1Test.randPerm;
-import static java.util.Arrays.sort;
+import java.util.NoSuchElementException;
 
 public class Oblig1 {
 
     //
-    public static void main(String[] args) {/*
-        /*/
-        String a = "";
-        String b = "";
-        System.out.println(flett( a, b));/*
-        int[] a = {7, 4, 5, 9, 2, 3, 10, 11, 7};
-        delsortering(a);
+    public static void main(String[] args) {
+        /*
+        int[] a = {1,-1};
+       delsortering(a);
         System.out.println(Arrays.toString(a));
-        //int sum=0 ;
-       /* for (int i = 1; i<=10000 ;i++) {
-            j=j+ ombyttinger(randomArray1(6));
-        }
-        char[] b = {'a', 'b', 'c', 'd'};
-        rotasjon(b,-5);
-        System.out.println(Arrays.toString(b));
-        // System.out.println(j/10000);*/
-    }
+        //int sum=0 ;*/
+        //System.out.println(Arrays.toString(indekssortering(a)));
+        /*for (int i = 0 ; i<10 ; i++){
+            i++;
+            System.out.println(i);
 
-
-    public static int[] randomArray1(int num_values) {
-        System.out.println("randomArray1 lager et array");
-        int values[] = new int[num_values];
-        int taken[] = new int[num_values];
-
-        // Loop over arrayen og fyll med tall
-        for (int i = 0; i < num_values; ++i) {
-            //values[i] = i+1;
-            int random_value = (int) (Math.random() * num_values + 1);
-            if (taken[random_value - 1] == 1) {
-                i = i - 1;
-            } else {
-                values[i] = random_value;
-                taken[random_value - 1] = 1;
-            }
         }
 
-        return values;
+        /*
+       for (int i = 1; i<=10000 ;i++) {
+           j = j + ombyttinger(randomArray1(9045));
+       }
+         System.out.println(j/10000);*/
     }
+
 
     //Oppgave1
     // Når blir det flest ombyttinger?
@@ -56,8 +36,8 @@ public class Oblig1 {
     // Dersom verdien ved hver indeks øker slik at den største verdien i tabbellen er i høyeste/siste index,
     // Da vil uttrykket a[i-1]>a[i] være false og koden i if statementet vil ikke kjøre.
     // Hvor mange blir det i gjennomsnitt?
-    // Det blir i gjennomsnitt nesten n ombyttninger når n stor.
-    // n-ln(n)-0,577 ser ut til å gi et godt estimat på gjennomsnittelig antall ombyttninger der n er størrelsen på array.
+    // n-ln(n)-0,423 ser ut til å gi et godt estimat på gjennomsnittelig antall ombyttninger der n er størrelsen på
+    // array.
     // Metoden er mindre effektiv enn andre maks metoder vi har sett på, fordi den må bytte hver gang verdien
     // i neste indeks er lavere enn en av verdiene i en tidligere index. Dette medfører at den må bytte
     // for nesten hver iterasjon når størrelsen på arrayen er stor. En mer effektiv løsning blir da å kun måtte
@@ -158,6 +138,174 @@ public class Oblig1 {
         }
     }
 
+    ///Oppgave 5
+
+    public static void rotasjon(char[] a) {
+        if (a.length == 0)
+            return;
+        char temp = a[0];
+        if (a.length == 2) {
+            a[0] = a[1];
+            a[1] = temp;
+            return;
+        }
+
+        a[0] = a[a.length - 1];
+        for (int i = a.length - 2; i > 0; i--) {
+            a[i + 1] = a[i];
+            if (i == 1)
+                a[i] = temp;
+        }
+    }
+
+    //Oppgave 6
+
+    public static void rotasjon(char[] a, int k) {
+        if (a.length <2 || k == 0)
+            return;
+        char temp = a[0];
+        k %= a.length;
+        if (k < 0)
+            k = k + a.length;
+        char[] b = new char[k];
+        for (int i = 0; i < k; i++) b[k - 1 - i] = a[a.length - 1 - i];
+        for (int i = a.length - 1; i >= k; i--) a[i] = a[i - k];
+        for (int i = 0; i < b.length; i++) a[i] = b[i];
+    }
+
+  ////  Oppgave7 //////////////
+
+    public static String flett(String s, String t) {
+        if (s.length()==0)
+            return t;
+        if (t.length()==0)
+            return s;
+        char[] a = new char[s.toCharArray().length+t.toCharArray().length];
+        int i=0;
+        int j=0;
+        int k=0;
+        while (i < s.toCharArray().length && j<t.toCharArray().length){
+            a[k] = s.charAt(i);
+            k++;
+            i++;
+            a[k] = t.charAt(j);
+            k++;
+            j++;
+        }
+        while (i<s.toCharArray().length){
+            a[k]= s.charAt(i);
+            k++;
+            i++;
+        }
+        while (j<t.toCharArray().length) {
+            a[k++]= t.charAt(j++);
+        }
+        String s1 = new String(a);
+        // return String.valueOf(a);
+        return s1;
+    }
+
+    public static String flett(String... s) {
+        int maxLength=0;
+        String out = "";
+        for (int i = 0 ; i<s.length; i++) {
+            if (s[i].length()>maxLength)
+                maxLength=s[i].length();
+        }
+        for (int i= 0 ; i<maxLength;i++){
+            for (int j=0;j<s.length;j++){
+                if (s[j].length()>i){
+                    out+=s[j].charAt(i);
+                }
+            }
+        }
+        return out ;
+    }
+
+    //Oppgave 8
+
+    public static int[] indekssortering(int[] a){
+        int[] b = a.clone();
+        int[] indextabell = new int[a.length];
+        kvikksortering(b,0,b.length);
+        for( int i = 0 ; i<a.length; i++) {
+            for (int j = 0; j < a.length; j++) {
+                if (b[i] == a[j] && valueNotInArray(indextabell,j))
+                    indextabell[i] = j;
+            }
+        }
+        return indextabell;
+    }
+
+    //Oppgave 9
+    // Skal finne de tre minste verdiene i tabell a og returnere en tabell med tre verdier der første verdi skal
+    //være iindeksen til den minste veriden i a, andre verdi indeksen til den nest minste i a og tredje verdi
+    // indeksen til den tredje minste verdien i a.
+    public static int[] tredjeMin(int[] a) {
+        int arrayAlengde = a.length;
+        if (a.length < 3)
+            throw new NoSuchElementException("Tabbellen har mindre enn 3 verdier");
+       /* int mv = 0;
+        int nmv = 1;
+        int nnmv = 2;
+
+        if (a[mv] > a[nmv]){
+            mv = 1;
+            nmv = 0;
+        }
+
+        if (a[mv] > a[nnmv]){
+            mv = 2;
+            nnmv = 0;
+        }
+
+        if (a[nmv] > a[nnmv]){
+            nmv = 2;
+            nnmv = 1;
+        }*/
+        int[] m = new int[3];
+
+        System.arraycopy(a, 0, m, 0, 3);
+        kvikksortering(m,0,m.length);
+
+        if(arrayAlengde == 3)
+            return m;
+        int laveste = m[3-1];
+        for(int i = 3; i < arrayAlengde; i++){
+            int verdi = a[i];
+
+            if(a[i]< laveste){
+                for(int j = 0; j < 3; j++){
+                    if(verdi < m[j]){
+                        int temp = m[j];
+                        m[j] = verdi;
+                        verdi = temp;
+                    }
+                    laveste = m[3-1];
+                }
+            }
+        }
+        return m;
+
+
+
+    }
+
+    //Oppgave 10
+
+
+
+    // Hjelpemetoder////
+
+    //returnerer true dersom verdien j finnes i a
+    public static boolean valueNotInArray(int[] a, int j){
+        for (int i : a ) {
+            if (j == i)
+                return false;
+        }
+        return true;
+    }
+
     public static void bytt(int[] a, int i, int j) {
         int temp = a[i];
         a[i] = a[j];
@@ -196,73 +344,27 @@ public class Oblig1 {
         }
     }
 
-    ///Opgave 5
 
-    public static void rotasjon(char[] a) {
-        if (a.length == 0)
-            return;
-        char temp = a[0];
-        if (a.length == 2) {
-            a[0] = a[1];
-            a[1] = temp;
-            return;
+    public static int[] randomArray1(int num_values) {
+        System.out.println("randomArray1 lager et array");
+        int values[] = new int[num_values];
+        int taken[] = new int[num_values];
+
+        // Loop over arrayen og fyll med tall
+        for (int i = 0; i < num_values; ++i) {
+            //values[i] = i+1;
+            int random_value = (int) (Math.random() * num_values + 1);
+            if (taken[random_value - 1] == 1) {
+                i = i - 1;
+            } else {
+                values[i] = random_value;
+                taken[random_value - 1] = 1;
+            }
         }
 
-        a[0] = a[a.length - 1];
-        for (int i = a.length - 2; i > 0; i--) {
-            a[i + 1] = a[i];
-            if (i == 1)
-                a[i] = temp;
-        }
+        return values;
     }
 
-    //oppgave 6
-
-    public static void rotasjon(char[] a, int k) {
-        if (a.length <2 || k == 0)
-            return;
-        char temp = a[0];
-        k %= a.length;
-        if (k < 0)
-            k = k + a.length;
-        char[] b = new char[k];
-        for (int i = 0; i < k; i++) b[k - 1 - i] = a[a.length - 1 - i];
-        for (int i = a.length - 1; i >= k; i--) a[i] = a[i - k];
-        for (int i = 0; i < b.length; i++) a[i] = b[i];
-    }
-
-  ////  Oppgave7 //////////////
-
-    public static String flett(String s, String t) {
-
-        
-        char[] a = new char[s.toCharArray().length+t.toCharArray().length];
-        int i=0;
-        int j=0;
-        int k=0;
-        while (i < s.toCharArray().length && j<t.toCharArray().length){
-            a[k] = s.charAt(i);
-            k++;
-            i++;
-            a[k] = t.charAt(j);
-            k++;
-            i++;
-        }
-        while (i<s.toCharArray().length){
-            a[k]= s.charAt(i);
-            k++;
-            i++;
-        }
-        while (j<t.toCharArray().length) {
-            a[k]= t.charAt(j);
-            k++;
-            i++;
-        }
-        return Arrays.toString(a);
-    }
-
-    //public static String flett(String[] a) {
-    //}
 }
 
 
