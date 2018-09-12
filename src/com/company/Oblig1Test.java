@@ -26,9 +26,9 @@ public class Oblig1Test {
         antallFeil += oppgave2();
         antallFeil += oppgave3();
         antallFeil += oppgave4();
-        //antallFeil += oppgave5();
-        //antallFeil += oppgave6();
-        //antallFeil += oppgave7();
+        antallFeil += oppgave5();
+        antallFeil += oppgave6();
+        antallFeil += oppgave7();
         //antallFeil += oppgave8();
         //antallFeil += oppgave9();
         //antallFeil += oppgave10();
@@ -189,6 +189,7 @@ public class Oblig1Test {
     }
 
 
+
  ///// Oppgave 4 //////////////////////////////////////
 
     public static int oppgave4() {
@@ -220,6 +221,7 @@ public class Oblig1Test {
                     ("Oppgave 4: c) Metoden gjør feil for en tabell en verdi!");
             antallFeil++;
         }
+
 
         a = new int[]{4};
         b = new int[]{4};
@@ -267,6 +269,7 @@ public class Oblig1Test {
         }
 
         if (!Arrays.equals(a, b)) {
+            System.out.println(Arrays.toString(a));
             System.out.println
                     ("Oppgave 4: i) Det blir feil hvis det kun er oddetall!");
             antallFeil++;
@@ -309,13 +312,11 @@ public class Oblig1Test {
                     ("Oppgave 4: l) Metoden gjør feil for negative verdier!");
             antallFeil++;
         }
-
         if (antallFeil == 0) {
             a = randPerm(100000);
             long tid = System.currentTimeMillis();
             Oblig1.delsortering(a);
             tid = System.currentTimeMillis() - tid;
-
             for (int i = 0; i < 50000; i++) {
                 if (a[i] != 2 * i + 1) {
                     System.out.println
@@ -343,8 +344,9 @@ public class Oblig1Test {
             }
         }
 
+
         return antallFeil;
-    }/*
+    }
 
     ///// Oppgave 5 //////////////////////////////////////
 
@@ -382,6 +384,7 @@ public class Oblig1Test {
 
         Oblig1.rotasjon(d);
         if (!Arrays.equals(d, d0)) {
+            System.out.println(Arrays.toString(d));
             System.out.println("Oppgave 5: d) Feil hvis tabellen har flere elementer!");
             antallFeil++;
         }
@@ -446,6 +449,7 @@ public class Oblig1Test {
         char[] d0 = {'G', 'H', 'I', 'J', 'A', 'B', 'C', 'D', 'E', 'F'};
 
         Oblig1.rotasjon(d, 4);
+
         if (!Arrays.equals(d, d0)) {
             System.out.println("Oppgave 6: g) Feil hvis tabellen har flere elementer!");
             antallFeil++;
@@ -498,7 +502,6 @@ public class Oblig1Test {
                     + "er for ineffektiv. Må forbedres!");
             antallFeil++;
         }
-
         return antallFeil;
     }
 
@@ -576,7 +579,7 @@ public class Oblig1Test {
                     ("Oppgave 7a: i) Svaret skal bli lik ABCDEFGHIJKLMN");
             antallFeil++;
         }
-
+/*
         String[] a = {};
 
         try {
@@ -618,15 +621,15 @@ public class Oblig1Test {
         }
 
         s = Oblig1.flett("AFK", "BGLP", "CHMQT", "DINRUW", "EJOSVXY");
-
+        System.out.println(s);
         if (s.compareTo("ABCDEFGHIJKLMNOPQRSTUVWXY") != 0) {
             System.out.println
                     ("Oppgave 7b: f) Svaret skal bli ABCDEFGHIJKLMNOPQRSTUVWXY!");
             antallFeil++;
         }
-
+*/
         return antallFeil;
-    }
+    }/*
 
     ///// Oppgave 8 //////////////////////////////////////
 
@@ -955,7 +958,7 @@ public class Oblig1Test {
         }
         return antallFeil;
     }
-
+*/
     ///// Hjelpemetoder /////////////////////////////
 
     public static void bytt(int[] a, int i, int j) {
@@ -1003,4 +1006,5 @@ public class Oblig1Test {
         return a;                        // permutasjonen returneres
     }
 
-} // class Oblig1Test*/
+}
+// class Oblig1Test*/
