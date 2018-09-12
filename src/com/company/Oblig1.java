@@ -5,33 +5,6 @@ import java.util.NoSuchElementException;
 
 public class Oblig1 {
 
-    //
-    public static void main(String[] args) {
-
-
-
-        int[] a = {2,1,3,0,5,6};
-        System.out.println(Arrays.toString(tredjeMin(a)));
-       /*
-       delsortering(a);
-
-        System.out.println(Arrays.toString(a));
-        //int sum=0 ;*/
-        //System.out.println(Arrays.toString(indekssortering(a)));
-        /*for (int i = 0 ; i<10 ; i++){
-            i++;
-            System.out.println(i);
-
-        }
-
-        /*
-       for (int i = 1; i<=10000 ;i++) {
-           j = j + ombyttinger(randomArray1(9045));
-       }
-         System.out.println(j/10000);*/
-    }
-
-
     //Oppgave1
     // Når blir det flest ombyttinger?
     //Når tabbellen a inneholder høyeste verdi først, i index 0, og så lavere verdier for hver index slik at siste
@@ -206,7 +179,6 @@ public class Oblig1 {
             a[k++]= t.charAt(j++);
         }
         String s1 = new String(a);
-        // return String.valueOf(a);
         return s1;
     }
 
@@ -249,8 +221,7 @@ public class Oblig1 {
     public static int[] tredjeMin(int[] a) {
         if (a.length < 3)
             throw new NoSuchElementException("Tabbellen har mindre enn 3 verdier");
-
-
+        
         int[] b = Arrays.copyOf(a,3);
         b=indekssortering(b);
 
@@ -336,21 +307,7 @@ public class Oblig1 {
 
 
     // Hjelpemetoder////
-/*
-        if (a[mv] > a[nmv]){
-            mv = 1;
-            nmv = 0;
-        }
 
-        if (a[mv] > a[nnmv]){
-            mv = 2;
-            nnmv = 0;
-        }
-
-        if (a[nmv] > a[nnmv]){
-            nmv = 2;
-            nnmv = 1;
-        }*/
     //returnerer true dersom verdien j finnes i a
     public static boolean valueNotInArray(int[] a, int j){
         for (int i : a ) {
@@ -398,7 +355,6 @@ public class Oblig1 {
         }
     }
 
-
     public static int[] randomArray1(int num_values) {
         System.out.println("randomArray1 lager et array");
         int values[] = new int[num_values];
@@ -418,31 +374,4 @@ public class Oblig1 {
 
         return values;
     }
-
 }
-
-
-
-/*
-        int counter=0;
-        for (int i = 1; i < a.length; i++) {
-            if (a[i] % 2 != 0) {
-                counter++;
-                for (int j = 1; j <= i; j++) {
-                    if (a[i] < a[j - 1]&& a[i]%2!=0 || (a[i]%2!=0&&a[j-1]%2==0)) {
-                        bytt(a, i, j - 1);
-                    }
-                }
-            }
-        }
-        if (counter ==0)
-            counter=1;
-        for(int i= counter; i <a.length;i++){
-            if (a[i]%2==0) {
-                for (int j = counter; j <= i; j++) {
-                    if ((a[i] < a[j - 1])&&(a[j-1]%2==0)) {
-                        bytt(a, i, j - 1);
-                    }
-                }
-            }
-        }*/
