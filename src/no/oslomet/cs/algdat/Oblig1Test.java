@@ -1,5 +1,5 @@
-//package no.oslomet.cs.algdat;
-package com.company;
+package no.oslomet.cs.algdat;
+
 ////// Testprogram for Oblig 1 - 2018 ////////////////////////
 
 /*
@@ -12,13 +12,14 @@ Når en så tror at koden er feilfri, kan testprogrammet brukes ved at
 kommentartegnet foran metodekallet tas vekk. Testprogrammet må gi 0 feil før
 Oblig 1 sendes inn!
 */
-/*
+
 ///// Oppdatert 9. september 2018 ///////////////
-*/
+
+import com.company.Oblig1;
+
 import java.util.*;
 
 public class Oblig1Test {
-
     public static void main(String[] args) {
         int antallFeil = 0;
 
@@ -147,7 +148,6 @@ public class Oblig1Test {
         return antallFeil;
     }
 
-
     ///// Oppgave 3 //////////////////////////////////////
 
     public static int oppgave3() {
@@ -188,9 +188,7 @@ public class Oblig1Test {
         return antallFeil;
     }
 
-
-
- ///// Oppgave 4 //////////////////////////////////////
+    ///// Oppgave 4 //////////////////////////////////////
 
     public static int oppgave4() {
         int antallFeil = 0;
@@ -221,7 +219,6 @@ public class Oblig1Test {
                     ("Oppgave 4: c) Metoden gjør feil for en tabell en verdi!");
             antallFeil++;
         }
-
 
         a = new int[]{4};
         b = new int[]{4};
@@ -269,7 +266,6 @@ public class Oblig1Test {
         }
 
         if (!Arrays.equals(a, b)) {
-            System.out.println(Arrays.toString(a));
             System.out.println
                     ("Oppgave 4: i) Det blir feil hvis det kun er oddetall!");
             antallFeil++;
@@ -312,11 +308,13 @@ public class Oblig1Test {
                     ("Oppgave 4: l) Metoden gjør feil for negative verdier!");
             antallFeil++;
         }
+
         if (antallFeil == 0) {
             a = randPerm(100000);
             long tid = System.currentTimeMillis();
             Oblig1.delsortering(a);
             tid = System.currentTimeMillis() - tid;
+
             for (int i = 0; i < 50000; i++) {
                 if (a[i] != 2 * i + 1) {
                     System.out.println
@@ -343,7 +341,6 @@ public class Oblig1Test {
                 antallFeil++;
             }
         }
-
 
         return antallFeil;
     }
@@ -384,7 +381,6 @@ public class Oblig1Test {
 
         Oblig1.rotasjon(d);
         if (!Arrays.equals(d, d0)) {
-            System.out.println(Arrays.toString(d));
             System.out.println("Oppgave 5: d) Feil hvis tabellen har flere elementer!");
             antallFeil++;
         }
@@ -449,7 +445,6 @@ public class Oblig1Test {
         char[] d0 = {'G', 'H', 'I', 'J', 'A', 'B', 'C', 'D', 'E', 'F'};
 
         Oblig1.rotasjon(d, 4);
-
         if (!Arrays.equals(d, d0)) {
             System.out.println("Oppgave 6: g) Feil hvis tabellen har flere elementer!");
             antallFeil++;
@@ -502,6 +497,7 @@ public class Oblig1Test {
                     + "er for ineffektiv. Må forbedres!");
             antallFeil++;
         }
+
         return antallFeil;
     }
 
@@ -585,6 +581,7 @@ public class Oblig1Test {
         try {
             s = Oblig1.flett(a);  // kaller metoden
         } catch (Exception e) {
+            System.out.println(e);
             System.out.println
                     ("Oppgave 7b: a) Skal ikke kaste unntak for en tom tabell!");
             antallFeil++;
@@ -599,6 +596,7 @@ public class Oblig1Test {
         try {
             s = Oblig1.flett("", "ABC", "");  // kaller metoden
         } catch (Exception e) {
+            System.out.println(e);
             System.out.println
                     ("Oppgave 7b: c) Skal ikke kaste unntak for en tom streng!");
             antallFeil++;
@@ -760,7 +758,7 @@ public class Oblig1Test {
 
         while (flere1) {
             int[] c = Oblig1.tredjeMin(tabell);
-            System.out.println(Arrays.toString(c));
+
             if (tabell[c[0]] != 1 || tabell[c[1]] != 2 || tabell[c[2]] != 3) {
                 System.out.println("Oppgave 9: c) Feil for " + Arrays.toString(tabell));
                 antallFeil++;
@@ -812,7 +810,7 @@ public class Oblig1Test {
         long tid = System.currentTimeMillis();
         Oblig1.tredjeMin(a);
         tid = System.currentTimeMillis() - tid;
-        System.out.println(tid);
+
 
         if (tid > 100) {
             System.out.println("Oppgave 9: g) Metoden er ineffektiv! Bruker du");
@@ -1004,5 +1002,4 @@ public class Oblig1Test {
         return a;                        // permutasjonen returneres
     }
 
-}
-// class Oblig1Test*/
+} // class Oblig1Test

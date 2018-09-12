@@ -306,17 +306,17 @@ public class Oblig1 {
         int[] bL = new int[29];
         lagBokstav(a,aL);
         lagBokstav(b,bL);
-        boolean ordOk = true;
+        boolean inneholder = true;
 
         if(a.equals(b) || a.length() == 0){
-            return ordOk;
+            return inneholder;
         } else {
             for(int i = 0; i <aL.length; i++){
                 if(aL[i] > bL[i]){
-                    ordOk = false;
+                    inneholder= false;
                 }
             }
-            return ordOk;
+            return inneholder;
         }
 
     }
