@@ -1,4 +1,6 @@
-package com.company;
+// Jakob Braseth Ramstad s325854
+
+package no.oslomet.cs.algdat;
 
 import java.util.Arrays;
 import java.util.NoSuchElementException;
@@ -215,13 +217,11 @@ public class Oblig1 {
     }
 
     //Oppgave 9
-    // Skal finne de tre minste verdiene i tabell a og returnere en tabell med tre verdier der første verdi skal
-    //være iindeksen til den minste veriden i a, andre verdi indeksen til den nest minste i a og tredje verdi
-    // indeksen til den tredje minste verdien i a.
+
     public static int[] tredjeMin(int[] a) {
         if (a.length < 3)
             throw new NoSuchElementException("Tabbellen har mindre enn 3 verdier");
-        
+
         int[] b = Arrays.copyOf(a,3);
         b=indekssortering(b);
 
@@ -271,44 +271,43 @@ public class Oblig1 {
 
     //Oppgave 10
 
+
     public static boolean inneholdt(String a, String b){
 
-        int[] aL = new int[29];
-        int[] bL = new int[29];
-        lagBokstav(a,aL);
-        lagBokstav(b,bL);
-        boolean inneholder = true;
+        if (a.length()== 0 || a.equals(b))
+            return true;
 
-        if(a.equals(b) || a.length() == 0){
-            return inneholder;
-        } else {
-            for(int i = 0; i <aL.length; i++){
-                if(aL[i] > bL[i]){
-                    inneholder= false;
-                }
+        char[] alfabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','Æ','Ø','Å'};
+
+        long[] aCharacterCount = new long[29];
+        long[] bCharacterCount = new long[29];
+
+        for(int i=0 ; i<a.length(); i++){
+            for (int j = 0 ; j<alfabet.length;j++) {
+                if (a.charAt(i)==alfabet[j])
+                    aCharacterCount[j]= aCharacterCount[j] +1;
             }
-            return inneholder;
+
         }
 
-    }
-
-    public static void lagBokstav(String ord, int[] listen){
-        char[] bokstaver = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','Æ','Ø','Å'};
-
-        for(int i = 0; i<ord.length(); i++){
-            for(int j = 0; j<bokstaver.length;j++){
-                char temp = (char) ord.charAt(i);
-                if(bokstaver[j] == temp){
-                    listen[j]++;
+        for(int i=0 ; i<b.length(); i++){
+            for (int j = 0 ; j<alfabet.length;j++) {
+                if (b.charAt(i)==alfabet[j]){
+                    bCharacterCount[j]= bCharacterCount[j] +1;
                 }
             }
         }
-    }
 
+        for (int i=0; i< aCharacterCount.length;i++) {
+            if (aCharacterCount[i]>bCharacterCount[i])
+                return false;
+        }
+        return  true;
+    }
 
     // Hjelpemetoder////
 
-    //returnerer true dersom verdien j finnes i a
+    //returnerer true dersom verdien j ikke finnes i a
     public static boolean valueNotInArray(int[] a, int j){
         for (int i : a ) {
             if (j == i)
@@ -353,25 +352,5 @@ public class Oblig1 {
                 bytt(a, v, h);                 // bytter om a[v] og a[h]
             } else return v;  // a[v] er nåden første som ikke er mindre enn skilleverdi
         }
-    }
-
-    public static int[] randomArray1(int num_values) {
-        System.out.println("randomArray1 lager et array");
-        int values[] = new int[num_values];
-        int taken[] = new int[num_values];
-
-        // Loop over arrayen og fyll med tall
-        for (int i = 0; i < num_values; ++i) {
-            //values[i] = i+1;
-            int random_value = (int) (Math.random() * num_values + 1);
-            if (taken[random_value - 1] == 1) {
-                i = i - 1;
-            } else {
-                values[i] = random_value;
-                taken[random_value - 1] = 1;
-            }
-        }
-
-        return values;
     }
 }

@@ -15,8 +15,6 @@ Oblig 1 sendes inn!
 
 ///// Oppdatert 9. september 2018 ///////////////
 
-import com.company.Oblig1;
-
 import java.util.*;
 
 public class Oblig1Test {
@@ -941,6 +939,7 @@ public class Oblig1Test {
         b = Oblig1.inneholdt(s, t);
         tid = System.currentTimeMillis() - tid;
 
+        System.out.println(tid);
         if (tid > 100) {
             System.out.println
                     ("Oppgave 10: n) Dette (" + tid + " ms) gikk sakte! Finn en bedre algoritme!");
