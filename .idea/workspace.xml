@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584a8ce4-c1a4-4ab8-ac7d-d8e3d04a9592" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UkeOppgaver4/uke4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uke5/uke5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oblig2/Beholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oblig2/DobbeltLenketListe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oblig2/Liste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oblig2/Oblig2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +21,8 @@
       <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="23" />
+            <state relative-caret-position="17">
+              <caret line="99" column="21" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="23" />
               <folding>
                 <element signature="e#22786#22787#0" expanded="true" />
                 <element signature="e#22821#22822#0" expanded="true" />
@@ -31,24 +33,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uke4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java">
+      <file leaf-file-name="DobbeltLenketListe.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/oblig2/DobbeltLenketListe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="289">
+              <caret line="119" column="8" lean-forward="true" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
               <folding>
-                <element signature="method#aIterativ#0;class#uke4#0" />
-                <element signature="method#tverrsumIterativ#0;class#uke4#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#1494#1495#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1614#1615#0" expanded="true" />
+                <element signature="e#1689#1690#0" expanded="true" />
+                <element signature="e#1735#1736#0" expanded="true" />
+                <element signature="e#1810#1811#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+                <element signature="e#2143#2144#0" expanded="true" />
+                <element signature="e#2218#2219#0" expanded="true" />
+                <element signature="e#2269#2270#0" expanded="true" />
+                <element signature="e#2344#2345#0" expanded="true" />
+                <element signature="e#2399#2400#0" expanded="true" />
+                <element signature="e#2474#2475#0" expanded="true" />
+                <element signature="e#2540#2541#0" expanded="true" />
+                <element signature="e#2615#2616#0" expanded="true" />
+                <element signature="e#2921#2922#0" expanded="true" />
+                <element signature="e#2996#2997#0" expanded="true" />
+                <element signature="e#3046#3047#0" expanded="true" />
+                <element signature="e#3121#3122#0" expanded="true" />
+                <element signature="e#3162#3163#0" expanded="true" />
+                <element signature="e#3237#3238#0" expanded="true" />
+                <element signature="e#3449#3450#0" expanded="true" />
+                <element signature="e#3524#3525#0" expanded="true" />
+                <element signature="e#3575#3576#0" expanded="true" />
+                <element signature="e#3650#3651#0" expanded="true" />
+                <element signature="e#4155#4156#0" expanded="true" />
+                <element signature="e#4238#4239#0" expanded="true" />
+                <element signature="e#4300#4301#0" expanded="true" />
+                <element signature="e#4378#4379#0" expanded="true" />
+                <element signature="e#4431#4432#0" expanded="true" />
+                <element signature="e#4514#4515#0" expanded="true" />
+                <element signature="e#4572#4573#0" expanded="true" />
+                <element signature="e#4655#4656#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uke5.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/uke5/uke5.java">
+      <file leaf-file-name="Oblig2Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/oblig2/Oblig2Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="-9886">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Beholder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/oblig2/Beholder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/oblig2/Liste.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -88,6 +148,10 @@
         <option value="$PROJECT_DIR$/src/no/oslomet/cs/algdat/Oblig1.java" />
         <option value="$PROJECT_DIR$/src/UkeOppgaver4/uke4.java" />
         <option value="$PROJECT_DIR$/src/uke5/uke5.java" />
+        <option value="$PROJECT_DIR$/src/oblig2/Beholder.java" />
+        <option value="$PROJECT_DIR$/src/oblig2/Liste.java" />
+        <option value="$PROJECT_DIR$/src/oblig2/Oblig2Test.java" />
+        <option value="$PROJECT_DIR$/src/oblig2/DobbeltLenketListe.java" />
       </list>
     </option>
   </component>
@@ -111,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,20 +198,13 @@
               <item name="AlgDat" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgDat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="uke5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgDat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgDat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UkeOppgaver4" type="462c0819:PsiDirectoryNode" />
+              <item name="oblig2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -157,6 +215,11 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jakob\IdeaProjects\AlgDat\src\oblig2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,14 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.uke5">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="AlgDat" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
+  <component name="RunManager" selected="Application.Oblig2Test">
     <configuration name="Oblig1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="no.oslomet.cs.algdat.Oblig1" />
       <module name="AlgDat" />
@@ -194,6 +250,16 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="no.oslomet.cs.algdat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Oblig2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oblig2.Oblig2Test" />
+      <module name="AlgDat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oblig2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,19 +285,19 @@
       </extension>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Oblig1" />
       <item itemvalue="Application.Oblig1Test" />
       <item itemvalue="Application.uke4" />
       <item itemvalue="Application.uke5" />
+      <item itemvalue="Application.Oblig2Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Oblig2Test" />
         <item itemvalue="Application.uke5" />
         <item itemvalue="Application.uke4" />
         <item itemvalue="Application.Oblig1Test" />
         <item itemvalue="Application.Oblig1" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -258,14 +324,16 @@
       <workItem from="1537725400757" duration="11000" />
       <workItem from="1537805541904" duration="1920000" />
       <workItem from="1537905148890" duration="4598000" />
+      <workItem from="1538994836644" duration="4028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116732000" />
+    <option name="totallyTimeSpent" value="120760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="925" y="6" width="987" height="981" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -277,12 +345,13 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20166074" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20092379" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.201726" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20082389" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290993" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -294,7 +363,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +379,22 @@
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="23" />
+          <folding>
+            <element signature="e#22786#22787#0" expanded="true" />
+            <element signature="e#22821#22822#0" expanded="true" />
+            <element signature="e#29462#29463#0" expanded="true" />
+            <element signature="e#29533#29534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10472">
           <caret line="616" column="34" selection-start-line="616" selection-start-column="34" selection-end-line="616" selection-end-column="34" />
           <folding>
@@ -322,17 +406,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="method#aIterativ#0;class#uke4#0" />
-            <element signature="method#tverrsumIterativ#0;class#uke4#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9673">
@@ -346,17 +420,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="method#aIterativ#0;class#uke4#0" />
-            <element signature="method#tverrsumIterativ#0;class#uke4#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10472">
@@ -370,17 +434,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="method#aIterativ#0;class#uke4#0" />
-            <element signature="method#tverrsumIterativ#0;class#uke4#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78370">
@@ -464,8 +518,8 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="23" />
+        <state relative-caret-position="17">
+          <caret line="99" column="21" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="23" />
           <folding>
             <element signature="e#22786#22787#0" expanded="true" />
             <element signature="e#22821#22822#0" expanded="true" />
@@ -478,21 +532,77 @@
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java">
+    <entry file="file://$PROJECT_DIR$/src/UkeOppgaver4/uke4.java" />
+    <entry file="file://$PROJECT_DIR$/src/uke5/uke5.java" />
+    <entry file="file://$PROJECT_DIR$/src/oblig2/Beholder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
-            <element signature="method#aIterativ#0;class#uke4#0" />
-            <element signature="method#tverrsumIterativ#0;class#uke4#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uke5/uke5.java">
+    <entry file="file://$PROJECT_DIR$/src/oblig2/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oblig2/Oblig2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9886">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oblig2/DobbeltLenketListe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="119" column="8" lean-forward="true" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2269#2270#0" expanded="true" />
+            <element signature="e#2344#2345#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="true" />
+            <element signature="e#2540#2541#0" expanded="true" />
+            <element signature="e#2615#2616#0" expanded="true" />
+            <element signature="e#2921#2922#0" expanded="true" />
+            <element signature="e#2996#2997#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
+            <element signature="e#3121#3122#0" expanded="true" />
+            <element signature="e#3162#3163#0" expanded="true" />
+            <element signature="e#3237#3238#0" expanded="true" />
+            <element signature="e#3449#3450#0" expanded="true" />
+            <element signature="e#3524#3525#0" expanded="true" />
+            <element signature="e#3575#3576#0" expanded="true" />
+            <element signature="e#3650#3651#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4238#4239#0" expanded="true" />
+            <element signature="e#4300#4301#0" expanded="true" />
+            <element signature="e#4378#4379#0" expanded="true" />
+            <element signature="e#4431#4432#0" expanded="true" />
+            <element signature="e#4514#4515#0" expanded="true" />
+            <element signature="e#4572#4573#0" expanded="true" />
+            <element signature="e#4655#4656#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
