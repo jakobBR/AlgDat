@@ -302,25 +302,33 @@ public class DobbeltLenketListe<T> implements Liste<T>
         return sj.toString();
     }
 
-
     public static <T> void sorter(Liste<T> liste, Comparator<? super T> c)
     {
-
         for (int i = 0; i < liste.antall(); i++) {
             Iterator<T> iterator = liste.iterator();
-            T verdi1= iterator.next();
-            for (int j = 0; j < liste.antall()-1-i; j++)                // går fra 1 til n
-                {
-                    System.out.println("i:"+i);
-                    System.out.println("j:"+j);
+            T størst= iterator.next();
+            int størstIndeks = 0;
+            for (int j = 1; j < liste.antall()-i; j++) {
+                T verdi2 = iterator.next();
+                //finner største verdi og indeks i liste
+                if (c.compare(størst, verdi2) < 0){ 
+                    størst = verdi2;
+                    størstIndeks = j;
 
-                    T verdi2 = iterator.next();
-                    iterator.iteratorendringer++;
-                    if (c.compare(verdi1,verdi2)>0)
-                        //bytte om verdi1 og verdi 2 slik at verdi 1 etterhvert havner bakerst;
-                        liste.leggInn(j,verdi2);
-                        liste.leggInn(j+1,verdi1);
                 }
+            }
+            /*
+            T temp = liste.hent(liste.antall()-i);
+            liste.leggInn(liste.antall()-i,størst);
+            liste.leggInn(størstIndeks,temp);*/
+            //fjerner størst fra den tidligere posisjonen og plasserer den bakerst
+            liste.leggInn(liste.antall()-i-1,liste.fjern(størstIndeks));
+            /*
+            T temp = liste.hent(liste.antall()-i);
+                liste.fjern(liste.antall()-i);
+                liste.leggInn(liste.antall()-i,størst);
+                liste.fjern(størstIndeks);
+                liste.leggInn(størstIndeks,temp);*/
         }
     }
 
