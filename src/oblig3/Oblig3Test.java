@@ -24,21 +24,17 @@ public class Oblig3Test
     {
         int antallFeil = 0;
 
-        //antallFeil += oppgave1();
-        //antallFeil += oppgave2();
-        //antallFeil += oppgave3();
-        //antallFeil += oppgave4();
-        //antallFeil += oppgave5();
+       //antallFeil += oppgave1();
+       //antallFeil += oppgave2();
+       //antallFeil += oppgave3();
+       //antallFeil += oppgave4();
+        antallFeil += oppgave5();
         //antallFeil += oppgave6();
         //antallFeil += oppgave7();
         //antallFeil += oppgave8();
         //antallFeil += oppgave9();
         //antallFeil += oppgave10();
 
-        Integer[] a = {4,7,2,9,5,10,8,1,3,6};
-        ObligSBinTre<Integer> tre = new ObligSBinTre<>(Comparator.naturalOrder());
-        for (int verdi : a) tre.leggInn(verdi);
-        System.out.println(tre.antall());  // Utskrift: 10
 
         if (antallFeil == 0)
         {

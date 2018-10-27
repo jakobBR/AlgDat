@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584a8ce4-c1a4-4ab8-ac7d-d8e3d04a9592" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/oblig3/Beholder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oblig3/Oblig3Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oblig3/ObligSBinTre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/programeringoblig3/UnikeTall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oblig3/Stakk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oblig3/TabellStakk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oblig3/Oblig3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig3/Oblig3Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oblig3/ObligSBinTre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oblig3/ObligSBinTre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/programeringoblig3/UnikeTall.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,33 +17,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AlgDat$Oblig3Test.ic" NAME="Oblig3Test Coverage Results" MODIFIED="1540579557676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>oblig3.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oblig2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="68">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DobbeltLenketListe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oblig2/DobbeltLenketListe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3465#3466#0" expanded="true" />
-                <element signature="e#3494#3495#0" expanded="true" />
-                <element signature="e#3540#3541#0" expanded="true" />
-                <element signature="e#3574#3575#0" expanded="true" />
-                <element signature="e#4914#4915#0" expanded="true" />
-                <element signature="e#4959#4960#0" expanded="true" />
-                <element signature="e#7400#7401#0" expanded="true" />
-                <element signature="e#7443#7444#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -56,64 +42,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnikeTall.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/programeringoblig3/UnikeTall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObligSBinTre.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ObligSBinTre.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/oblig3/ObligSBinTre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+            <state relative-caret-position="527">
+              <caret line="297" column="37" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
               <folding>
-                <element signature="e#2836#2837#0" expanded="true" />
-                <element signature="e#2911#2912#0" expanded="true" />
-                <element signature="e#2952#2953#0" expanded="true" />
-                <element signature="e#3027#3028#0" expanded="true" />
-                <element signature="e#3072#3073#0" expanded="true" />
-                <element signature="e#3101#3102#0" expanded="true" />
-                <element signature="e#3139#3140#0" expanded="true" />
-                <element signature="e#3214#3215#0" expanded="true" />
-                <element signature="e#3260#3261#0" expanded="true" />
-                <element signature="e#3294#3295#0" expanded="true" />
-                <element signature="e#3343#3344#0" expanded="true" />
-                <element signature="e#3418#3419#0" expanded="true" />
-                <element signature="e#3480#3481#0" expanded="true" />
-                <element signature="e#3555#3556#0" expanded="true" />
-                <element signature="e#3605#3606#0" expanded="true" />
-                <element signature="e#3680#3681#0" expanded="true" />
-                <element signature="e#3721#3722#0" expanded="true" />
-                <element signature="e#3796#3797#0" expanded="true" />
-                <element signature="e#3833#3834#0" expanded="true" />
-                <element signature="e#3908#3909#0" expanded="true" />
-                <element signature="e#3946#3947#0" expanded="true" />
-                <element signature="e#4021#4022#0" expanded="true" />
-                <element signature="e#4057#4058#0" expanded="true" />
-                <element signature="e#4132#4133#0" expanded="true" />
-                <element signature="e#4175#4176#0" expanded="true" />
-                <element signature="e#4250#4251#0" expanded="true" />
-                <element signature="e#4288#4289#0" expanded="true" />
-                <element signature="e#4363#4364#0" expanded="true" />
-                <element signature="e#4418#4419#0" expanded="true" />
-                <element signature="e#4463#4464#0" expanded="true" />
+                <element signature="e#4460#4461#0" expanded="true" />
+                <element signature="e#4489#4490#0" expanded="true" />
+                <element signature="e#5158#5159#0" expanded="true" />
+                <element signature="e#5192#5193#0" expanded="true" />
+                <element signature="e#8104#8105#0" expanded="true" />
+                <element signature="e#8179#8180#0" expanded="true" />
+                <element signature="e#8217#8218#0" expanded="true" />
+                <element signature="e#8292#8293#0" expanded="true" />
+                <element signature="e#8328#8329#0" expanded="true" />
+                <element signature="e#8403#8404#0" expanded="true" />
+                <element signature="e#8446#8447#0" expanded="true" />
+                <element signature="e#8521#8522#0" expanded="true" />
+                <element signature="e#8559#8560#0" expanded="true" />
+                <element signature="e#8634#8635#0" expanded="true" />
+                <element signature="e#8689#8690#0" expanded="true" />
+                <element signature="e#8734#8735#0" expanded="true" />
+                <element signature="e#8564#8565#0" expanded="true" />
+                <element signature="e#8632#8633#0" expanded="true" />
+                <element signature="e#8685#8686#0" expanded="true" />
+                <element signature="e#8768#8769#0" expanded="true" />
+                <element signature="e#8826#8827#0" expanded="true" />
+                <element signature="e#8909#8910#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comparator.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Comparator.java">
+      <file leaf-file-name="TabellStakk.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/oblig3/TabellStakk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+            <state relative-caret-position="330">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+              <folding>
+                <element signature="e#316#346#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +90,26 @@
       <file leaf-file-name="Oblig3Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oblig3/Oblig3Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+            <state relative-caret-position="367">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractStringBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/AbstractStringBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="447" selection-start-line="447" selection-end-line="447" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Arrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55420">
+              <caret line="3331" selection-start-line="3331" selection-end-line="3331" />
             </state>
           </provider>
         </entry>
@@ -130,29 +117,11 @@
       <file leaf-file-name="Beholder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oblig3/Beholder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="306">
               <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Oblig2Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oblig2/Oblig2Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oblig2/Liste.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -178,6 +147,8 @@
       <find>foreach</find>
       <find>oppgave7</find>
       <find>inde</find>
+      <find>antall</find>
+      <find>tom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,9 +174,11 @@
         <option value="$PROJECT_DIR$/src/programmeringOblig2/lol.java" />
         <option value="$PROJECT_DIR$/src/programeringoblig3/oblig3.java" />
         <option value="$PROJECT_DIR$/src/oblig3/Beholder.java" />
+        <option value="$PROJECT_DIR$/src/programeringoblig3/UnikeTall.java" />
+        <option value="$PROJECT_DIR$/src/oblig3/TabellStakk.java" />
+        <option value="$PROJECT_DIR$/src/oblig3/Stakk.java" />
         <option value="$PROJECT_DIR$/src/oblig3/Oblig3Test.java" />
         <option value="$PROJECT_DIR$/src/oblig3/ObligSBinTre.java" />
-        <option value="$PROJECT_DIR$/src/programeringoblig3/UnikeTall.java" />
       </list>
     </option>
   </component>
@@ -219,10 +192,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="223" />
-    <option name="y" value="507" />
+    <option name="x" value="851" />
     <option name="width" value="1056" />
-    <option name="height" value="981" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -263,12 +235,6 @@
               <item name="AlgDat" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgDat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="programeringoblig3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgDat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgDat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="programmeringOblig2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,8 +248,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,6 +259,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -314,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UnikeTall">
+  <component name="RunManager" selected="Application.Oblig3Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oblig2.Main" />
       <module name="AlgDat" />
@@ -374,8 +341,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UnikeTall" />
         <item itemvalue="Application.Oblig3Test" />
+        <item itemvalue="Application.UnikeTall" />
         <item itemvalue="Application.lol" />
         <item itemvalue="Application.Oblig2Test" />
         <item itemvalue="Application.Main" />
@@ -417,18 +384,20 @@
       <workItem from="1540306738801" duration="11141000" />
       <workItem from="1540367964528" duration="5693000" />
       <workItem from="1540461409553" duration="4728000" />
+      <workItem from="1540564152678" duration="12219000" />
+      <workItem from="1540640275630" duration="15600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173302000" />
+    <option name="totallyTimeSpent" value="201121000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="223" y="507" width="1056" height="981" extended-state="0" />
+    <frame x="851" y="0" width="1056" height="1047" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3084223" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.20462047" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -436,11 +405,11 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3262159" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20682068" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21987952" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19277108" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -449,6 +418,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32931727" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -464,34 +434,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/oblig2/Oblig2Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12512">
-          <caret line="738" selection-start-line="738" selection-end-line="738" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oblig2/Beholder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oblig2/Liste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/DobbeltLenketListe.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -613,13 +559,6 @@
     <entry file="file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/Oblig1.java" />
     <entry file="file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/Oblig1.java" />
     <entry file="file://$PROJECT_DIR$/src/no/oslomet/cs/algdat/Oblig1.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="4610" column="25" selection-start-line="4610" selection-start-column="25" selection-end-line="4610" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/DualPivotQuicksort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -687,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/programmeringOblig2/lol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/oblig2/Beholder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -722,9 +654,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/oblig2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/oblig3/Beholder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="306">
           <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -732,72 +671,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oblig3/Oblig3Test.java">
+    <entry file="file://$PROJECT_DIR$/src/programeringoblig3/UnikeTall.java" />
+    <entry file="file://$PROJECT_DIR$/src/programmeringOblig2/lol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        <state relative-caret-position="527">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55420">
+          <caret line="3331" selection-start-line="3331" selection-end-line="3331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oblig3/Stakk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
+        <state relative-caret-position="17">
           <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oblig3/TabellStakk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="e#316#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="447" selection-start-line="447" selection-end-line="447" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oblig3/Oblig3Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/oblig3/ObligSBinTre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        <state relative-caret-position="527">
+          <caret line="297" column="37" selection-start-line="297" selection-start-column="37" selection-end-line="297" selection-end-column="37" />
           <folding>
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#2952#2953#0" expanded="true" />
-            <element signature="e#3027#3028#0" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#3101#3102#0" expanded="true" />
-            <element signature="e#3139#3140#0" expanded="true" />
-            <element signature="e#3214#3215#0" expanded="true" />
-            <element signature="e#3260#3261#0" expanded="true" />
-            <element signature="e#3294#3295#0" expanded="true" />
-            <element signature="e#3343#3344#0" expanded="true" />
-            <element signature="e#3418#3419#0" expanded="true" />
-            <element signature="e#3480#3481#0" expanded="true" />
-            <element signature="e#3555#3556#0" expanded="true" />
-            <element signature="e#3605#3606#0" expanded="true" />
-            <element signature="e#3680#3681#0" expanded="true" />
-            <element signature="e#3721#3722#0" expanded="true" />
-            <element signature="e#3796#3797#0" expanded="true" />
-            <element signature="e#3833#3834#0" expanded="true" />
-            <element signature="e#3908#3909#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#4021#4022#0" expanded="true" />
-            <element signature="e#4057#4058#0" expanded="true" />
-            <element signature="e#4132#4133#0" expanded="true" />
-            <element signature="e#4175#4176#0" expanded="true" />
-            <element signature="e#4250#4251#0" expanded="true" />
-            <element signature="e#4288#4289#0" expanded="true" />
-            <element signature="e#4363#4364#0" expanded="true" />
-            <element signature="e#4418#4419#0" expanded="true" />
-            <element signature="e#4463#4464#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oblig2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/programeringoblig3/UnikeTall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4460#4461#0" expanded="true" />
+            <element signature="e#4489#4490#0" expanded="true" />
+            <element signature="e#5158#5159#0" expanded="true" />
+            <element signature="e#5192#5193#0" expanded="true" />
+            <element signature="e#8104#8105#0" expanded="true" />
+            <element signature="e#8179#8180#0" expanded="true" />
+            <element signature="e#8217#8218#0" expanded="true" />
+            <element signature="e#8292#8293#0" expanded="true" />
+            <element signature="e#8328#8329#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#8446#8447#0" expanded="true" />
+            <element signature="e#8521#8522#0" expanded="true" />
+            <element signature="e#8559#8560#0" expanded="true" />
+            <element signature="e#8634#8635#0" expanded="true" />
+            <element signature="e#8689#8690#0" expanded="true" />
+            <element signature="e#8734#8735#0" expanded="true" />
+            <element signature="e#8564#8565#0" expanded="true" />
+            <element signature="e#8632#8633#0" expanded="true" />
+            <element signature="e#8685#8686#0" expanded="true" />
+            <element signature="e#8768#8769#0" expanded="true" />
+            <element signature="e#8826#8827#0" expanded="true" />
+            <element signature="e#8909#8910#0" expanded="true" />
           </folding>
         </state>
       </provider>

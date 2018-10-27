@@ -84,7 +84,7 @@ public class ObligSBinTre<T> implements Beholder<T>
 
         while (p != null)
         {
-            int cmp = comp.compare(verdi, p.verdi);
+            int cmp = comp.compare(verdi, p.verdi); // svarer til verdi - p.verdi. negativ hvis verdi er mindre enn p.verdi
             if (cmp < 0) p = p.venstre;
             else if (cmp > 0) p = p.høyre;
             else return true;
@@ -96,12 +96,59 @@ public class ObligSBinTre<T> implements Beholder<T>
     @Override
     public boolean fjern(T verdi)
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        if (verdi == null) return false;  // treet har ingen nullverdier
+
+        Node<T> p = rot, q = null;   // q skal være forelder til p
+
+        while (p != null)            // leter etter verdi
+        {
+            int cmp = comp.compare(verdi,p.verdi);      // sammenligner
+            if (cmp < 0) { q = p; p = p.venstre; }      // går til venstre
+            else if (cmp > 0) { q = p; p = p.høyre; }   // går til høyre
+            else break;    // den søkte verdien ligger i p
+        }
+        if (p == null) return false;   // finner ikke verdi
+
+        if (p.venstre == null || p.høyre == null)  // Tilfelle 1) og 2)
+        {
+            Node<T> b = p.venstre != null ? p.venstre : p.høyre;  // b for barn
+            if (p == rot) rot = b;
+            else if (p == q.venstre) {
+                q.venstre = b;
+                if (b!=null)b.forelder=q;
+            }
+            else {
+                q.høyre = b;
+                if (b!=null)b.forelder=q;
+            }
+        }
+        else  // Tilfelle 3)
+        {
+            Node<T> s = p, r = p.høyre;   // finner neste i inorden
+            while (r.venstre != null)
+            {
+                s = r;    // s er forelder til r
+                r = r.venstre;
+                r.forelder=s;
+            }
+
+            p.verdi = r.verdi;   // kopierer verdien i r til p
+
+            if (s != p) s.venstre = r.høyre;
+            else s.høyre = r.høyre;
+        }
+
+        antall--;   // det er nå én node mindre i treet
+        return true;
     }
 
     public int fjernAlle(T verdi)
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        int antall=0;
+        while (fjern(verdi)){
+            antall++;
+        }
+        return antall;
     }
 
     @Override
@@ -112,7 +159,25 @@ public class ObligSBinTre<T> implements Beholder<T>
 
     public int antall(T verdi)
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        if (!inneholder(verdi)){ // sjekker om verdien er i treet
+            return 0; // returnerer 0 dersom verdien ikke er i treet ;
+        }
+
+        Node<T> p = rot;
+        int forekomster = 0 ;
+
+        while (p != null)
+        {
+            int cmp = comp.compare(verdi, p.verdi); // svarer til verdi - p.verdi. negativ hvis verdi er mindre enn p.verdi
+            if (cmp < 0) p = p.venstre;
+            else if (cmp > 0) p = p.høyre;
+            else {
+                p = p.høyre;
+                forekomster++;
+            }
+        }
+
+        return forekomster;
     }
 
     @Override
@@ -121,36 +186,116 @@ public class ObligSBinTre<T> implements Beholder<T>
         return antall == 0;
     }
 
+    public void nullstill2(Node<T> p){
+
+        while (p.høyre!=null)
+        {
+            nullstill2(p.høyre);
+            p.høyre = null;
+        }
+        while (p.venstre!=null)
+        {
+            nullstill2(p.venstre);
+            p.venstre = null;
+        }
+        p.verdi = null;
+        p.forelder=null;
+    }
+
     @Override
     public void nullstill()
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+
+        if (rot == null ){
+            return;
+        } else {
+            nullstill2(rot);
+        }
+        rot = null; antall = 0;
+
     }
 
     private static <T> Node<T> nesteInorden(Node<T> p)
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        Node<T> q ;
+
+        if(p.høyre !=null) {
+            p=p.høyre;
+            while (p.venstre!=null){
+                p = p.venstre;
+            }
+            return p ;
+        }
+
+        while (p.forelder != null){
+            q=p.forelder;
+            if (q.venstre==p){
+                return q;
+            } else {
+                p=q;
+            }
+        }
+        return null;
+
     }
 
     @Override
     public String toString()
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        if (antall==0){
+            return "[]";
+        }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+
+        Node<T> p = rot;
+        //setter p til første inorden
+        while (p.venstre != null)
+            p=p.venstre;
+
+        sb.append(p.verdi).append(", ");
+        while (nesteInorden(p)!=null) {
+            p=nesteInorden(p);
+            sb.append(p.verdi).append(", ");
+        }
+        sb.delete(sb.length()-2,sb.length()); //fjerner ", " bakerst i stringen.
+        sb.append("]");
+
+        return sb.toString();
     }
 
-    public String omvendtString()
-    {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+    public String omvendtString() {
+        if (rot == null) return "[]";            // tomt tre
+
+        Stakk<Node<T>> stakk = new TabellStakk<>();
+        Stakk<Node<T>> stakk2 = new TabellStakk<>();
+        Node<T> p = rot;   // starter i roten og går til venstre
+        for (; p.venstre != null; p = p.venstre) stakk.leggInn(p);
+
+        while (true) {
+            stakk2.leggInn(p);
+            if (p.høyre != null)          // til venstre i høyre subtre
+            {
+                for (p = p.høyre; p.venstre != null; p = p.venstre) {
+                    stakk.leggInn(p);
+                }
+            } else if (!stakk.tom()) {
+                p = stakk.taUt();   // p.høyre == null, henter fra stakken
+            } else break;          // stakken er tom - vi er ferdig
+
+        }
+        return stakk2.toString();
     }
 
     public String høyreGren()
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        if (rot == null) return "[]";
     }
 
     public String lengstGren()
     {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        if (rot == null) return "[]";
     }
 
     public String[] grener()
