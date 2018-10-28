@@ -24,17 +24,48 @@ public class Oblig3Test
     {
         int antallFeil = 0;
 
-       //antallFeil += oppgave1();
-       //antallFeil += oppgave2();
-       //antallFeil += oppgave3();
-       //antallFeil += oppgave4();
+        antallFeil += oppgave1();
+        antallFeil += oppgave2();
+        antallFeil += oppgave3();
+        antallFeil += oppgave4();
         antallFeil += oppgave5();
-        //antallFeil += oppgave6();
-        //antallFeil += oppgave7();
-        //antallFeil += oppgave8();
-        //antallFeil += oppgave9();
-        //antallFeil += oppgave10();
+        antallFeil += oppgave6();
+        antallFeil += oppgave7();
+        antallFeil += oppgave8();
+        antallFeil += oppgave9();
+        antallFeil += oppgave10();
 
+        int[] a = {4,7,2,9,4,10,8,7,4,6};
+        ObligSBinTre<Integer> tre = new ObligSBinTre<>(Comparator.naturalOrder());
+        for (int verdi : a) tre.leggInn(verdi);
+/*
+        System.out.println(tre.høyreGren() + " " + tre.lengstGren());
+
+        // Utskrift: [I, T, J, R, S] [I, A, B, H, C, F, E, D]
+
+        String[] s = tre.grener();
+
+        for (String gren : s) System.out.println(gren);
+
+        // Utskrift:
+        // [I, A, B, H, C, F, E, D]
+        // [I, A, B, H, C, F, G]
+        // [I, T, J, R, O, L, K]
+        // [I, T, J, R, O, L, M, N]
+        // [I, T, J, R, O, P, Q]
+        // [I, T, J, R, S]
+
+        System.out.println(tre.bladnodeverdier());
+        // Utskrift: [D, G, K, N, Q, S]
+
+        System.out.println(tre.postString());
+        // [D, E, G, F, C, H, B, A, K, N, M, L, Q, P, O, S, R, J, T, I]
+
+        int[] a = {4,7,2,9,4,10,8,7,4,6};
+        ObligSBinTre<Integer> tre2 = new ObligSBinTre<>(Comparator.naturalOrder());
+        for (int verdi : a) tre2.leggInn(verdi);
+
+        System.out.println(tre2.postString());  // [2, 6, 4, 4, 7, 8, 10, 9, 7, 4]*/
 
         if (antallFeil == 0)
         {
